@@ -1,0 +1,69 @@
+@page "/pokemon"
+
+@using PokemonApi.Dtos
+@inject HttpClient httpClient
+
+<!-- NavMenu.razor usando Bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Mi Aplicación</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lista">Lista</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/buscar">Buscar</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="main-container">
+
+
+
+
+    <h1 class="header">lista de pokemon</h1>
+    @if (pokemons == null)
+    {
+        <h3 class="loading">Cargando...</h3>
+    }
+    else
+    {
+        <ul class="pokemon-list">
+            @foreach (PokemonDto pokemon in pokemons)
+            {
+                <li class="pokemon-item">
+                    <a href="@($"/pokemon/{pokemon.id}")" class="pokemon-link">@pokemon.name</a>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+
+@code {
+    public List<PokemonDto>? pokemons;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var response = await httpClient.GetFromJsonAsync<PokemonApiResponse>("pokemon");
+            pokemons = response?.results;
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error loading Pokémon: {ex.Message}");
+        }
+    }
+
+    public class PokemonApiResponse
+    {
+        public List<PokemonDto> results { get; set; }
+    }
+}

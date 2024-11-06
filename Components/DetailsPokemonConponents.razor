@@ -1,0 +1,17 @@
+@using PokemonApi.Dtos
+@inject HttpClient httpClient
+
+
+<p>Name: @pokemon.name</p>
+
+@code{
+    [Parameter]
+
+    public int id{get; set;}
+    private Pokemon pokemon {set; get;}
+
+     public class Pokemon {
+        public string name {get; set; }
+
+    }
+}
