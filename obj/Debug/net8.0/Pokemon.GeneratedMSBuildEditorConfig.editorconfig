@@ -34,10 +34,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/entregable/Pokemon/Pages/PokemonDetail.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vbkRldGFpbC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Documents/entregable/Pokemon/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -49,6 +45,10 @@ build_metadata.AdditionalFiles.CssScope = b-lsvgyn6dhj
 [D:/Documents/entregable/Pokemon/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-hi6lw3tgkg
+
+[D:/Documents/entregable/Pokemon/Pages/PokemonDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vbkRldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-kn1b41oni4
 
 [D:/Documents/entregable/Pokemon/Pages/PokemonList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vbkxpc3QucmF6b3I=

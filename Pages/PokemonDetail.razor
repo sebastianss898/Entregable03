@@ -1,33 +1,39 @@
-@page "/pokemon/{id:int}"
+@page "/pokemon/{name}"
 @using PokemonApi.Dtos
 @inject HttpClient httpClient
 @inject NavigationManager Navigation
 
-<h1>Detalles del Pokémon</h1>
-
+<h1 class="title">Detalles del Pokémon</h1>
+<div class="pokemon-card">
 @if (pokemon == null)
 {
     <p>Cargando detalles del Pokémon...</p>
 }
 else
-{
-    <h2>@pokemon.name</h2>
-    <p><strong>ID:</strong> @pokemon.id</p>
-    <!-- Agrega aquí más detalles del Pokémon según los datos disponibles -->
+{   
+        <h2>@pokemon.name</h2>
+        <p><strong>ID:</strong> @pokemon.id</p>
+        <p><strong>Peso:</strong> @pokemon.weight</p>
+        <p><strong>Altura:</strong> @pokemon.height</p>
+        <img src="@pokemon.sprites.front_default" alt="Imagen de @pokemon.name" />
 }
+<button @onclick="GoBack" class="button">Regresar a la lista</button>
+</div>
 
-<button @onclick="GoBack">Regresar a la lista</button>
+
+
+
+
 
 @code {
     [Parameter]
-    public int id { get; set; }
-
+    public string name { get; set; }
     public PokemonDto? pokemon;
 
     protected override async Task OnInitializedAsync()
     {
         // Llama a la API para obtener los detalles del Pokémon por ID
-        pokemon = await httpClient.GetFromJsonAsync<PokemonDto>($"pokemon/{id+1}");
+        pokemon = await httpClient.GetFromJsonAsync<PokemonDto>($"https://pokeapi.co/api/v2/pokemon/{name.ToLower()}");
     }
 
     private void GoBack()

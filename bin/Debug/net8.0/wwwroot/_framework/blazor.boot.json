@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Pokemon",
   "resources": {
-    "hash": "sha256-30GCktGGafgVXC650c8P/HRZaiIg33CrHuj1LQAfxFY=",
+    "hash": "sha256-T0SrbcSAl9RNtcJyZfRWR3czszOFNpv+069dBv+pJGc=",
     "jsModuleNative": {
       "dotnet.native.8.0.10.j5pn7c8lfs.js": "sha256-QVxMlY7ohmjgde/bZMA0dlWDAeuUP+tEfkiSdg4DFcE="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-KvqZaNpjwhrOuzE4b4aMFsI+VUTyiWfoDI4zn4l9BM8=",
       "netstandard.wasm": "sha256-v+s7sWxtOM6bnOvC0jFrtnm6uMfbDymwl2nHNgbS2LM=",
       "System.Private.CoreLib.wasm": "sha256-pklll63uFQoY6vaD3vbluS9osYiJWLLLmob1yHFgepI=",
-      "Pokemon.wasm": "sha256-XK7T27D3+hyRYxi0PRCGuKpCDq0wLQ1duG/BvebDcGM="
+      "Pokemon.wasm": "sha256-XD6Nnn1CJQKdOcmstB748LwSOIIY1r/z4GBXkFDbXmQ="
     },
     "pdb": {
-      "Pokemon.pdb": "sha256-FFY+pwIar/uolO5vUTLXPlzgQoE+nW0nGhsxDlc/nMM="
+      "Pokemon.pdb": "sha256-e9ApnLM1mX6Vf+c3ixUXofG8DWZ13TbyaxvTxEmuwNg="
     }
   },
   "cacheBootResources": true,

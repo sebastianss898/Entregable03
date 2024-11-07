@@ -1029,3 +1029,6 @@ D:\Documents\entregable\Pokemon\obj\Debug\net8.0\refint\Pokemon.dll
 D:\Documents\entregable\Pokemon\obj\Debug\net8.0\Pokemon.pdb
 D:\Documents\entregable\Pokemon\obj\Debug\net8.0\ref\Pokemon.dll
 D:\Documents\entregable\Pokemon\obj\Debug\net8.0\scopedcss\Pages\PokemonList.razor.rz.scp.css
+D:\Documents\entregable\Pokemon\obj\Debug\net8.0\Pokemon.sourcelink.json
+D:\Documents\entregable\Pokemon\obj\Debug\net8.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
+D:\Documents\entregable\Pokemon\obj\Debug\net8.0\scopedcss\Pages\PokemonDetail.razor.rz.scp.css
